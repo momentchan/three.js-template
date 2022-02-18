@@ -1,4 +1,5 @@
-import Experience from "../three.js-gist/Common/Experience";
+import Experience from "../three.js-gist/Common/Experience"
+import RendererTemplate from "./RendererTemplate"
 import CameraTemplate from "./CameraTempate";
 import WorldTemplate from "./WorldTemplate";
 
@@ -8,7 +9,7 @@ export default class ExperienceTemplate extends Experience {
 
         this.world = new WorldTemplate(this)
         this.camera = new CameraTemplate(this)
-        this.renderer = new Renderer(this)
+        this.renderer = new RendererTemplate(this)
     }
     resize() {
         super.resize()
