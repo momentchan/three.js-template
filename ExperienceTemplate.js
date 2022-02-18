@@ -1,7 +1,7 @@
 import * as THREE from 'three'
 import Experience from "../three.js-gist/Common/Experience"
 import RendererTemplate from "./RendererTemplate"
-import CameraTemplate from "./CameraTempate";
+import CameraTemplate from "./CameraTemplate";
 import WorldTemplate from "./WorldTemplate";
 
 export default class ExperienceTemplate extends Experience {
