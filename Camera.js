@@ -1,7 +1,7 @@
 import * as THREE from 'three'
-import Camera from "../three.js-gist/Common/Camera"
+import CameraBase from "./three.js-gist/Common/Camera"
 
-export default class CameraTemplate extends Camera {
+export default class Camera extends CameraBase {
     setInstance() {
         super.setInstance()
     }

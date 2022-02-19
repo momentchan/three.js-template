@@ -1,16 +1,16 @@
 import * as THREE from 'three'
-import Experience from "../three.js-gist/Common/Experience"
-import RendererT from "./RendererT"
-import CameraT from "./CameraT";
-import WorldT from "./WorldT";
+import ExperienceBase from "./three.js-gist/Common/Experience"
+import Renderer from "./Renderer"
+import Camera from "./Camera";
+import World from "./World";
 
-export default class ExperienceT extends Experience {
+export default class Experience extends ExperienceBase {
     constructor(canvas, sources) {
         super(canvas, sources)
 
-        this.world = new WorldT(this)
-        this.camera = new CameraT(this)
-        this.renderer = new RendererT(this)
+        this.world = new World(this)
+        this.camera = new Camera(this)
+        this.renderer = new Renderer(this)
     }
     resize() {
         super.resize()
